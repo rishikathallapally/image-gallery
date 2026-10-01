@@ -128,3 +128,7 @@ More gallery categories
 Rishika
 
 This project was created as part of my frontend development learning journey.
+
+## 🌐 Live Demo
+
+[View Live Image Gallery](https://rishikathallapally.github.io/image-gallery/)
