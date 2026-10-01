@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="header">
+        <div class="logo">
+            VISUAL DIARY
+        </div>
+        <nav class="navbar">
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <!-- DARK MODE BUTTON -->
+            <button id="darkModeBtn" class="dark-mode-btn">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION  -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="small-title">
+                VISUAL STORIES
+            </p>
+            <h1>
+                Moments worth
+                <span>remembering.</span>
+            </h1>
+            <p class="hero-text">
+                Explore a collection of beautiful moments,
+                places and stories captured through photography.
+            </p>
+            <a href="#gallery" class="explore-btn">
+                Explore Gallery
+            </a>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <main id="gallery" class="gallery-section">
+        <div class="section-heading">
+            <div>
+                <p class="small-title">
+                    OUR COLLECTION
+                </p>
+                <h2>
+                    Explore the Gallery
+                </h2>
+            </div>
+            <p class="gallery-description">
+                Browse through different categories
+                and discover something beautiful.
+            </p>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 Search photos...">
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="filters">
+            <button type="button" class="filter-btn active" data-category="all">
+                All
+            </button>
+            <button type="button" class="filter-btn" data-category="nature">
+                Nature
+            </button>
+            <button type="button" class="filter-btn" data-category="people">
+                People
+            </button>
+            <button type="button" class="filter-btn" data-category="food">
+                Food
+            </button>
+            <button type="button" class="filter-btn" data-category="animals">
+                Animals
+            </button>
+            <button type="button" class="filter-btn" data-category="art">
+                Art
+            </button>
+            <button type="button" class="filter-btn" id="favoritesBtn" data-category="favorites">
+                ❤️ Favorites
+            </button>
+        </div>
+
+        <!-- IMAGE GRID -->
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- IMAGE 1 -->
+            <article class="gallery-item" data-category="nature" data-index="0">
+                <img src="images/nature1.jpg" alt="Sun Rise">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Nature</span>
+                        <h3>Sun Rise</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 2 -->
+            <article class="gallery-item" data-category="people" data-index="1">
+                <img src="images/people1.jpg" alt="Street food seller">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>People</span>
+                        <h3>Street stories</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 3 -->
+            <article class="gallery-item" data-category="food" data-index="2">
+                <img src="images/food1.jpg" alt="Hyderabad Dum Biryani">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Food</span>
+                        <h3>Dum Biryani</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 4 -->
+            <article class="gallery-item" data-category="animals" data-index="3">
+                <img src="images/animals1.jpg" alt="Cheetah with baby">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Animals</span>
+                        <h3>Safe In her Protection</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 5 -->
+            <article class="gallery-item" data-category="art" data-index="4">
+                <img src="images/art1.jpg" alt="Head in the clouds art">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Art</span>
+                        <h3>Head in the Clouds</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 6 -->
+            <article class="gallery-item" data-category="nature" data-index="5">
+                <img src="images/nature2.jpg" alt="Pine Trees Kodaikanal">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Nature</span>
+                        <h3>Touch of Kodaikanal</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 7 -->
+            <article class="gallery-item" data-category="people" data-index="6">
+                <img src="images/people2.jpg" alt="Best Place to sit">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>People</span>
+                        <h3>Best Place</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 8 -->
+            <article class="gallery-item" data-category="food" data-index="7">
+                <img src="images/food2.jpg" alt="South Indian Thali">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Food</span>
+                        <h3>South Indian Thali</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 9 -->
+            <article class="gallery-item" data-category="animals" data-index="8">
+                <img src="images/animals2.jpg" alt="Animal holding flowers">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Animals</span>
+                        <h3>See Who Bought Flowers!</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 10 -->
+            <article class="gallery-item" data-category="art" data-index="9">
+                <img src="images/art2.jpg" alt="Gentle Touch">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Art</span>
+                        <h3>Gentle Touch</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 11 -->
+            <article class="gallery-item" data-category="nature" data-index="10">
+                <img src="images/nature3.jpg" alt="Waterfalls">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Nature</span>
+                        <h3>Water Falls</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 12 -->
+            <article class="gallery-item" data-category="people" data-index="11">
+                <img src="images/people3.jpg" alt="Children playing">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>People</span>
+                        <h3>Happy Days</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 13 -->
+            <article class="gallery-item" data-category="food" data-index="12">
+                <img src="images/food3.jpg" alt="Healthy food">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Food</span>
+                        <h3>Healthy Breakfast</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 14 -->
+            <article class="gallery-item" data-category="animals" data-index="13">
+                <img src="images/animals3.jpg" alt="cat">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Animals</span>
+                        <h3>Meowwwww!</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 15 -->
+            <article class="gallery-item" data-category="art" data-index="14">
+                <img src="images/art3.jpg" alt="art piece">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Art</span>
+                        <h3>A world behind the pages</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 16 -->
+            <article class="gallery-item" data-category="nature" data-index="15">
+                <img src="images/nature4.jpg" alt="Sunset">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Nature</span>
+                        <h3>Sunset + Beach = Awesome</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 17 -->
+            <article class="gallery-item" data-category="people" data-index="16">
+                <img src="images/people4.jpg" alt="Smile Balloons">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>People</span>
+                        <h3>Smiles for sale</h3>
+                    </div>
+                   <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 18 -->
+            <article class="gallery-item" data-category="food" data-index="17">
+                <img src="images/food4.jpg" alt="Pasta">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Food</span>
+                        <h3>Yummy Pasta!!!</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 19 -->
+            <article class="gallery-item" data-category="animals" data-index="18">
+                <img src="images/animals4.jpg" alt="Cow">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Animals</span>
+                        <h3>Hello cutieee</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 20 -->
+            <article class="gallery-item" data-category="art" data-index="19">
+                <img src="images/art4.jpg" alt="face Art work">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Art</span>
+                        <h3>Faceless Star </h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 21 -->
+            <article class="gallery-item" data-category="nature" data-index="20">
+                <img src="images/nature5.jpg" alt="Rain">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Nature</span>
+                        <h3>Best Season Ever</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 22 -->
+            <article class="gallery-item" data-category="people" data-index="21">
+                <img src="images/people5.jpg" alt="people">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>People</span>
+                        <h3>Made For Each Other</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 23 -->
+            <article class="gallery-item" data-category="food" data-index="22">
+                <img src="images/food5.jpg" alt="Donuts">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Food</span>
+                        <h3>Sweet Distractions</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 24 -->
+            <article class="gallery-item" data-category="animals" data-index="23">
+                <img src="images/animals5.jpg" alt="Tiger">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Animals</span>
+                        <h3>Proof that Tigers are cute</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 25 -->
+            <article class="gallery-item" data-category="art" data-index="24">
+                <img src="images/art5.jpg" alt="Art when bored">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Art</span>
+                        <h3>Bored!</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 26 -->
+            <article class="gallery-item" data-category="nature" data-index="25">
+                <img src="images/nature6.jpg" alt="Finland">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Nature</span>
+                        <h3>Dream Place</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 27 -->
+            <article class="gallery-item" data-category="people" data-index="26">
+                <img src="images/people6.jpg" alt="ordinary life">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>People</span>
+                        <h3>Life on the ground </h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 28 -->
+            <article class="gallery-item" data-category="food" data-index="27">
+                <img src="images/food6.jpg" alt="Cookies">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Food</span>
+                        <h3>I Love Cookies</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 29 -->
+            <article class="gallery-item" data-category="animals" data-index="28">
+                <img src="images/animals6.jpg" alt="Monkey holding camera">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Animals</span>
+                        <h3>Say Cheezzz!</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+
+            <!-- IMAGE 30-->
+            <article class="gallery-item" data-category="art" data-index="29">
+                <img src="images/art6.jpg" alt="Canvas">
+                <button type="button" class="favorite-btn">♡</button>
+                <div class="image-overlay">
+                    <div>
+                        <span>Art</span>
+                        <h3>Mini-Canvas</h3>
+                    </div>
+                    <button type="button" class="view-btn">
+                           View
+                    </button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!--  ABOUT -->
+    <section id="about" class="about-section">
+        <div>
+            <p class="small-title">
+                ABOUT Visual Diary
+            </p>
+            <h2>
+                Every picture tells
+                a different story.
+            </h2>
+        </div>
+        <p>
+            Visual Diary is a simple gallery created to
+            celebrate photography, nature, people lifestyle,
+            art and everyday moments.
+        </p>
+    </section>
+
+    <!--  LIGHTBOX  -->
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" id="closeBtn">
+            ×
+        </button>
+        <button class="nav-btn prev-btn" id="prevBtn">
+            ‹
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-info">
+                <span id="lightboxCategory">
+                    Category
+                </span>
+                <h3 id="lightboxTitle">
+                    Image Title
+                </h3>
+            </div>
+        </div>
+        <button class="nav-btn next-btn" id="nextBtn">
+            ›
+        </button>
+    </div>
+
+    <!--FOOTER -->
+    <footer>
+        <p>
+            © 2026 Visual Diary. Created with HTML, CSS & JavaScript.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
